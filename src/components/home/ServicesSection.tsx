@@ -16,11 +16,11 @@ const services = [
     id: 2,
     icon: (
       <svg viewBox="0 0 36 36" width="24" height="24" fill="none">
-        <rect x="8" y="8" width="20" height="22" rx="2" stroke="#4a9a8a" strokeWidth="2"/>
-        <path d="M13 8 L13 6 Q13 4 15 4 L21 4 Q23 4 23 6 L23 8" stroke="#4a9a8a" strokeWidth="2"/>
-        <line x1="13" y1="16" x2="23" y2="16" stroke="#4a9a8a" strokeWidth="1.8" strokeLinecap="round"/>
-        <line x1="13" y1="20" x2="20" y2="20" stroke="#4a9a8a" strokeWidth="1.8" strokeLinecap="round"/>
-        <line x1="13" y1="24" x2="21" y2="24" stroke="#4a9a8a" strokeWidth="1.8" strokeLinecap="round"/>
+        <rect x="8" y="8" width="20" height="22" rx="2" stroke="#4a7aaa" strokeWidth="2"/>
+        <path d="M13 8 L13 6 Q13 4 15 4 L21 4 Q23 4 23 6 L23 8" stroke="#4a7aaa" strokeWidth="2"/>
+        <line x1="13" y1="16" x2="23" y2="16" stroke="#4a7aaa" strokeWidth="1.8" strokeLinecap="round"/>
+        <line x1="13" y1="20" x2="20" y2="20" stroke="#4a7aaa" strokeWidth="1.8" strokeLinecap="round"/>
+        <line x1="13" y1="24" x2="21" y2="24" stroke="#4a7aaa" strokeWidth="1.8" strokeLinecap="round"/>
       </svg>
     ),
     title: "Consultancy",
@@ -30,11 +30,11 @@ const services = [
     id: 3,
     icon: (
       <svg viewBox="0 0 36 36" width="26" height="26" fill="none">
-        <rect x="6" y="18" width="24" height="13" rx="1" stroke="#4a7a9a" strokeWidth="2"/>
-        <path d="M4 18 L8 9 L28 9 L32 18 Z" stroke="#4a7a9a" strokeWidth="2"/>
+        <rect x="6" y="18" width="24" height="13" rx="1" stroke="#1a3a7a" strokeWidth="2"/>
+        <path d="M4 18 L8 9 L28 9 L32 18 Z" stroke="#1a3a7a" strokeWidth="2"/>
         <rect x="14" y="22" width="8" height="9" rx="1" stroke="#e07a3a" strokeWidth="1.8"/>
-        <rect x="8" y="21" width="4" height="4" rx="0.5" stroke="#4a7a9a" strokeWidth="1.5"/>
-        <rect x="24" y="21" width="4" height="4" rx="0.5" stroke="#4a7a9a" strokeWidth="1.5"/>
+        <rect x="8" y="21" width="4" height="4" rx="0.5" stroke="#1a3a7a" strokeWidth="1.5"/>
+        <rect x="24" y="21" width="4" height="4" rx="0.5" stroke="#1a3a7a" strokeWidth="1.5"/>
       </svg>
     ),
     title: "Ecotech Shop",
@@ -44,7 +44,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="bg-[#f7f6f1] py-20 px-6">
+    <section className="bg-[#f4f6fb] py-20 px-6">
       <div className="max-w-[1200px] mx-auto">
 
         {/* Header */}
@@ -53,7 +53,7 @@ export default function ServicesSection() {
             What We Do
           </p>
           <h2
-            className="text-[#1a4a3a] font-playfair font-normal leading-tight mb-4"
+            className="text-[#1a3a7a] font-playfair font-normal leading-tight mb-4"
             style={{ fontSize: "clamp(28px, 4vw, 42px)" }}
           >
             Complete Shrimp Aquaculture Services
@@ -73,12 +73,12 @@ export default function ServicesSection() {
               className="bg-white rounded-xl border border-gray-200 p-7 flex flex-col gap-4"
             >
               {/* Icon box */}
-              <div className="w-12 h-12 rounded-lg bg-[#e8f5f0] flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-[#e8eef8] flex items-center justify-center">
                 {icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-[#1a7a50] text-base font-bold font-lato">
+              <h3 className="text-[#1a3a7a] text-base font-bold font-lato">
                 {title}
               </h3>
 

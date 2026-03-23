@@ -9,7 +9,7 @@ const navLinks: { label: string; href: string }[] = [
   { label: "Services", href: "/services" },
   { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
-  { label: "Blog", href: "/blog" },
+  { label: "Blog", href: "" },
 ];
 
 export default function NavBar() {
@@ -18,7 +18,7 @@ export default function NavBar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <div className=" mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+      <div className="mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
 
         {/* ── Brand ── */}
         <Link href="/home" className="flex flex-col leading-tight">
@@ -38,10 +38,10 @@ export default function NavBar() {
               <li key={label}>
                 <Link
                   href={href}
-                  className={`text-sm font-lato transition-colors duration-200 pb-0.5 ${
+                  className={`text-sm font-lato tracking-[0.8px] transition-colors duration-200 pb-0.5 ${
                     isActive
-                      ? "text-[#1a4a3a] font-bold border-b-2 border-[#1a4a3a]"
-                      : "text-[#2d2d2d] font-normal hover:text-[#1a7a50]"
+                      ? "text-[#1a3a7a] font-bold border-b-2 border-[#1a3a7a]"
+                      : "text-[#2d2d2d] font-normal hover:text-[#1a3a7a]"
                   }`}
                 >
                   {label}
@@ -85,10 +85,10 @@ export default function NavBar() {
                 key={label}
                 href={href}
                 onClick={() => setMenuOpen(false)}
-                className={`py-3 text-[15px] font-lato border-b border-gray-100 transition-colors duration-200 ${
+                className={`py-3 text-[15px] font-lato tracking-[0.8px] border-b border-gray-100 transition-colors duration-200 ${
                   isActive
-                    ? "text-[#1a4a3a] font-bold"
-                    : "text-[#2d2d2d] hover:text-[#1a7a50]"
+                    ? "text-[#1a3a7a] font-bold"
+                    : "text-[#2d2d2d] hover:text-[#1a3a7a]"
                 }`}
               >
                 {label}

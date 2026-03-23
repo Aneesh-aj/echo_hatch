@@ -2,12 +2,12 @@ const services = [
   {
     id: 1,
     emoji: "🦐",
-    bgColor: "bg-[#e8f5f0]",
+    bgColor: "bg-[#dce6f5]",
     title: "Shrimp Hatchery",
     description:
       "Production of high-quality shrimp seeds using certified broodstock. Our hatchery maintains strict biosecurity protocols and advanced water quality management.",
     tag: "Core Service",
-    tagStyle: "bg-[#e8f5f0] text-[#1a7a50]",
+    tagStyle: "bg-[#e8eef8] text-[#1a3a7a]",
   },
   {
     id: 2,
@@ -22,12 +22,12 @@ const services = [
   {
     id: 3,
     emoji: "🏪",
-    bgColor: "bg-[#eaf0f8]",
+    bgColor: "bg-[#e8eef8]",
     title: "Ecotech Associate Shop",
     description:
       "Premium aquaculture inputs including specialized feed, probiotics, water treatment chemicals, and disease prevention products.",
     tag: "Retail",
-    tagStyle: "bg-[#e8f5f0] text-[#1a7a50]",
+    tagStyle: "bg-[#e8eef8] text-[#1a3a7a]",
   },
 ];
 
@@ -64,7 +64,7 @@ const qualityItems = [
 
 export default function ServicesContent() {
   return (
-    <section className="bg-[#f7f6f1] py-16 px-6">
+    <section className="bg-[#f4f6fb] py-16 px-6">
       <div className="max-w-[1100px] mx-auto">
 
         {/* ── Service Cards ── */}
@@ -72,26 +72,20 @@ export default function ServicesContent() {
           {services.map(({ id, emoji, bgColor, title, description, tag, tagStyle }) => (
             <div
               key={id}
-              className="bg-white rounded-2xl border border-gray-100 overflow-hidden flex flex-col"
+              className="bg-white rounded-2xl border border-gray-100 overflow-hidden flex flex-col shadow-sm"
             >
-              {/* Image / icon area */}
               <div className={`${bgColor} h-[148px] flex items-center justify-center`}>
                 <span className="text-5xl">{emoji}</span>
               </div>
-
-              {/* Body */}
               <div className="p-6 flex flex-col gap-3 flex-1">
-                <h3 className="text-[#1a7a50] text-base font-bold font-lato">
+                <h3 className="text-[#1a3a7a] text-base font-bold font-lato">
                   {title}
                 </h3>
                 <p className="text-gray-500 text-sm font-lato leading-relaxed flex-1">
                   {description}
                 </p>
-                {/* Tag */}
                 <div className="pt-1">
-                  <span
-                    className={`inline-block text-xs font-semibold font-lato px-3 py-1 rounded-full ${tagStyle}`}
-                  >
+                  <span className={`inline-block text-xs font-semibold font-lato px-3 py-1 rounded-full ${tagStyle}`}>
                     {tag}
                   </span>
                 </div>
@@ -106,7 +100,7 @@ export default function ServicesContent() {
             Why Choose Us
           </p>
           <h2
-            className="text-[#1a4a3a] font-playfair font-normal leading-tight mb-10"
+            className="text-[#1a3a7a] font-playfair font-normal leading-tight mb-10"
             style={{ fontSize: "clamp(26px, 4vw, 40px)" }}
           >
             Our Quality Standards
@@ -116,9 +110,9 @@ export default function ServicesContent() {
             {qualityItems.map(({ id, emoji, title, description }) => (
               <div
                 key={id}
-                className="bg-white rounded-xl border border-gray-100 px-6 py-5 flex flex-col gap-2"
+                className="bg-white rounded-xl border border-gray-100 px-6 py-5 flex flex-col gap-2 shadow-sm"
               >
-                <h4 className="text-[#1a7a50] text-sm font-bold font-lato flex items-center gap-2">
+                <h4 className="text-[#1a3a7a] text-sm font-bold font-lato flex items-center gap-2">
                   <span>{emoji}</span>
                   {title}
                 </h4>

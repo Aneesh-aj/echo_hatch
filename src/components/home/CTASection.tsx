@@ -5,7 +5,7 @@ export default function CTASection() {
     <section
       className="relative w-full py-20 px-6 flex items-center justify-center overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, #0f4a38 0%, #1a7a50 100%)",
+        background: "linear-gradient(135deg, #0f2a5a 0%, #1a4a9a 100%)",
       }}
     >
       {/* Dot pattern */}
@@ -15,6 +15,15 @@ export default function CTASection() {
           backgroundImage:
             "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)",
           backgroundSize: "32px 32px",
+        }}
+      />
+
+      {/* Radial glow */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse at 60% 50%, rgba(46,122,204,0.25) 0%, transparent 60%)",
         }}
       />
 
@@ -30,7 +39,7 @@ export default function CTASection() {
         </p>
         <Link
           href="/contact"
-          className="mt-2 px-10 py-3.5 bg-white text-[#1a4a3a] text-sm font-bold font-lato rounded-md border-2 border-white hover:bg-transparent hover:text-white transition-all duration-200 hover:-translate-y-0.5"
+          className="mt-2 px-10 py-3.5 bg-white text-[#1a3a7a] text-sm font-bold font-lato rounded-md border-2 border-white hover:bg-transparent hover:text-white transition-all duration-200 hover:-translate-y-0.5"
         >
           Enquire Now
         </Link>

@@ -7,7 +7,7 @@ const highlights = [
 
 export default function AboutStory() {
   return (
-    <section className="bg-[#f7f6f1] py-20 px-6">
+    <section className="bg-[#f4f6fb] py-20 px-6">
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
 
         {/* ── Left: Text ── */}
@@ -16,7 +16,7 @@ export default function AboutStory() {
             Who We Are
           </p>
           <h2
-            className="text-[#1a4a3a] font-playfair font-normal leading-[1.2] mb-6"
+            className="text-[#1a3a7a] font-playfair font-normal leading-[1.2] mb-6"
             style={{ fontSize: "clamp(28px, 4vw, 42px)" }}
           >
             Built on Expertise &amp; Trust
@@ -38,11 +38,11 @@ export default function AboutStory() {
           <div className="grid grid-cols-2 gap-x-6 gap-y-4">
             {highlights.map((item) => (
               <div key={item} className="flex items-start gap-2.5">
-                <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-[#e8f5f0] flex items-center justify-center">
+                <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-[#e8eef8] flex items-center justify-center">
                   <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
                     <path
                       d="M2 5.2L4 7.2L8 3"
-                      stroke="#1a7a50"
+                      stroke="#1a3a7a"
                       strokeWidth="1.6"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -59,13 +59,13 @@ export default function AboutStory() {
 
         {/* ── Right: Two photo placeholders ── */}
         <div className="flex flex-col gap-4">
-          <div className="bg-[#c8e6df] rounded-2xl h-[188px] flex items-center justify-center">
-            <span className="text-[#3a7a6a] text-xs font-bold tracking-[2px] uppercase font-lato">
+          <div className="bg-[#c5d5ee] rounded-2xl h-[188px] flex items-center justify-center">
+            <span className="text-[#1a3a7a] text-xs font-bold tracking-[2px] uppercase font-lato">
               Hatchery Facility Photo
             </span>
           </div>
-          <div className="bg-[#c8e6df] rounded-2xl h-[160px] flex items-center justify-center">
-            <span className="text-[#3a7a6a] text-xs font-bold tracking-[2px] uppercase font-lato">
+          <div className="bg-[#c5d5ee] rounded-2xl h-[160px] flex items-center justify-center">
+            <span className="text-[#1a3a7a] text-xs font-bold tracking-[2px] uppercase font-lato">
               Team Photo
             </span>
           </div>

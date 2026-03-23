@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section
-      className="relative w-full  flex items-center justify-center overflow-hidden"
+      className="relative w-full py-5 flex items-center justify-center overflow-hidden"
       style={{
         background:
-          "linear-gradient(135deg, #1a4a3a 0%, #1e7a50 50%, #2ecc80 100%)",
+          "linear-gradient(135deg, #0f2a5a 0%, #1a4a9a 50%, #2e7acc 100%)",
       }}
     >
       {/* Dot pattern */}
@@ -24,7 +24,7 @@ export default function HeroSection() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at 70% 50%, rgba(46,204,128,0.15) 0%, transparent 60%)",
+            "radial-gradient(ellipse at 70% 50%, rgba(46,122,204,0.2) 0%, transparent 60%)",
         }}
       />
 
@@ -32,13 +32,13 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col items-center text-center px-6 py-20 max-w-3xl gap-5">
 
         {/* Badge */}
-        <span className="inline-block border border-white/50 rounded-full px-5 py-2 text-[11px] font-bold tracking-[2.5px] uppercase text-white/90 font-lato">
+        <span className="inline-block border border-white/50 rounded-full px-5 py-2 text-[11px] bg-white/10 font-bold tracking-[2.5px] uppercase text-white/90 font-lato">
           Premium Aquaculture Solutions
         </span>
 
         {/* Headline */}
         <h1
-          className="text-white font-bold leading-[1.15] tracking-tight m-0 font-playfair"
+          className="text-white font-bold leading-[1.15] tracking-tight m-0 font-playfair b"
           style={{ fontSize: "clamp(36px, 6vw, 64px)" }}
         >
           Quality Shrimp Seeds
@@ -59,7 +59,7 @@ export default function HeroSection() {
         <div className="flex flex-wrap justify-center gap-4 mt-2">
           <Link
             href="/contact"
-            className="px-8 py-3.5 text-sm font-bold font-lato bg-white text-[#1a4a3a] rounded-md border-2 border-white hover:bg-[#f0faf5] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+            className="px-8 py-3.5 text-sm font-bold font-lato bg-white text-[#1a3a7a] rounded-md border-2 border-white hover:bg-[#f0f4ff] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
           >
             Get a Quote
           </Link>

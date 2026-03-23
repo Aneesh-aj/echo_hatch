@@ -6,7 +6,7 @@ const contactDetails = [
   {
     id: "phone",
     icon: (
-      <svg width="18" height="18" fill="none" stroke="#1a7a50" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg width="18" height="18" fill="none" stroke="#1a3a7a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
       </svg>
     ),
@@ -16,7 +16,7 @@ const contactDetails = [
   {
     id: "email",
     icon: (
-      <svg width="18" height="18" fill="none" stroke="#1a7a50" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg width="18" height="18" fill="none" stroke="#1a3a7a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <rect x="2" y="4" width="20" height="16" rx="2"/>
         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
       </svg>
@@ -27,7 +27,7 @@ const contactDetails = [
   {
     id: "address",
     icon: (
-      <svg width="18" height="18" fill="none" stroke="#1a7a50" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg width="18" height="18" fill="none" stroke="#1a3a7a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/>
         <circle cx="12" cy="10" r="3"/>
       </svg>
@@ -38,7 +38,7 @@ const contactDetails = [
   {
     id: "hours",
     icon: (
-      <svg width="18" height="18" fill="none" stroke="#1a7a50" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg width="18" height="18" fill="none" stroke="#1a3a7a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="10"/>
         <polyline points="12 6 12 12 16 14"/>
       </svg>
@@ -69,7 +69,7 @@ export default function ContactContent() {
   };
 
   return (
-    <section className="bg-[#f7f6f1] py-20 px-6">
+    <section className="bg-[#f4f6fb] py-20 px-6">
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
         {/* ── Left: Find Us ── */}
@@ -78,7 +78,7 @@ export default function ContactContent() {
             Our Details
           </p>
           <h2
-            className="text-[#1a4a3a] font-playfair font-normal leading-tight mb-8"
+            className="text-[#1a3a7a] font-playfair font-normal leading-tight mb-8"
             style={{ fontSize: "clamp(26px, 4vw, 38px)" }}
           >
             Find Us
@@ -89,11 +89,11 @@ export default function ContactContent() {
             {contactDetails.map(({ id, icon, label, lines }) => (
               <div key={id} className="flex gap-4 items-start">
                 {/* Icon box */}
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#e8f5f0] flex items-center justify-center">
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#e8eef8] flex items-center justify-center">
                   {icon}
                 </div>
                 <div>
-                  <p className="text-[#1a4a3a] text-sm font-bold font-lato mb-0.5">
+                  <p className="text-[#1a3a7a] text-sm font-bold font-lato mb-0.5">
                     {label}
                   </p>
                   {lines.map((line) => (
@@ -107,9 +107,9 @@ export default function ContactContent() {
           </div>
 
           {/* Map placeholder */}
-          <div className="bg-[#c8e6df] rounded-2xl h-[168px] flex items-center justify-center gap-2 px-6">
+          <div className="bg-[#c5d5ee] rounded-2xl h-[168px] flex items-center justify-center gap-2 px-6">
             <span className="text-lg">📍</span>
-            <span className="text-[#1a7a50] text-sm font-bold font-lato tracking-wide">
+            <span className="text-[#1a3a7a] text-sm font-bold font-lato tracking-wide">
               Google Maps Embed — Kumarapalayam
             </span>
           </div>
@@ -121,7 +121,7 @@ export default function ContactContent() {
             Quick Form
           </p>
           <h2
-            className="text-[#1a4a3a] font-playfair font-normal leading-tight mb-7"
+            className="text-[#1a3a7a] font-playfair font-normal leading-tight mb-7"
             style={{ fontSize: "clamp(26px, 4vw, 38px)" }}
           >
             Send an Enquiry
@@ -142,7 +142,7 @@ export default function ContactContent() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your name"
-                    className="border border-gray-200 rounded-lg px-4 py-2.5 text-sm font-lato text-gray-700 placeholder-gray-300 focus:outline-none focus:border-[#1a7a50] transition-colors"
+                    className="border border-gray-200 rounded-lg px-4 py-2.5 text-sm font-lato text-gray-700 placeholder-gray-300 focus:outline-none focus:border-[#1a3a7a] transition-colors"
                   />
                 </div>
                 <div className="flex flex-col gap-1.5">
@@ -155,7 +155,7 @@ export default function ContactContent() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+91 XXXXX XXXXX"
-                    className="border border-gray-200 rounded-lg px-4 py-2.5 text-sm font-lato text-gray-700 placeholder-gray-300 focus:outline-none focus:border-[#1a7a50] transition-colors"
+                    className="border border-gray-200 rounded-lg px-4 py-2.5 text-sm font-lato text-gray-700 placeholder-gray-300 focus:outline-none focus:border-[#1a3a7a] transition-colors"
                   />
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function ContactContent() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="your@email.com"
-                    className="border border-gray-200 rounded-lg px-4 py-2.5 text-sm font-lato text-gray-700 placeholder-gray-300 focus:outline-none focus:border-[#1a7a50] transition-colors"
+                    className="border border-gray-200 rounded-lg px-4 py-2.5 text-sm font-lato text-gray-700 placeholder-gray-300 focus:outline-none focus:border-[#1a3a7a] transition-colors"
                   />
                 </div>
                 <div className="flex flex-col gap-1.5">
@@ -183,7 +183,7 @@ export default function ContactContent() {
                     name="enquiryType"
                     value={formData.enquiryType}
                     onChange={handleChange}
-                    className="border border-gray-200 rounded-lg px-4 py-2.5 text-sm font-lato text-gray-700 focus:outline-none focus:border-[#1a7a50] transition-colors bg-white"
+                    className="border border-gray-200 rounded-lg px-4 py-2.5 text-sm font-lato text-gray-700 focus:outline-none focus:border-[#1a3a7a] transition-colors bg-white"
                   >
                     <option>Shrimp Seeds</option>
                     <option>Consultancy</option>
@@ -204,14 +204,14 @@ export default function ContactContent() {
                   onChange={handleChange}
                   placeholder="Tell us about your requirements..."
                   rows={5}
-                  className="border border-gray-200 rounded-lg px-4 py-3 text-sm font-lato text-gray-700 placeholder-gray-300 focus:outline-none focus:border-[#1a7a50] transition-colors resize-none"
+                  className="border border-gray-200 rounded-lg px-4 py-3 text-sm font-lato text-gray-700 placeholder-gray-300 focus:outline-none focus:border-[#1a3a7a] transition-colors resize-none"
                 />
               </div>
 
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full bg-[#1a6a4a] hover:bg-[#145a3e] text-white text-sm font-bold font-lato py-3.5 rounded-lg transition-colors duration-200"
+                className="w-full bg-[#1a3a7a] hover:bg-[#0f2a5a] text-white text-sm font-bold font-lato py-3.5 rounded-lg transition-colors duration-200"
               >
                 Submit Enquiry
               </button>

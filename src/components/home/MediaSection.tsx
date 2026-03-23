@@ -1,9 +1,9 @@
 type ImportStatus = "In Transit" | "Scheduled" | "Arrived";
 
 const statusStyles: Record<ImportStatus, string> = {
-  "In Transit": "bg-[#e8f4fd] text-[#1a6a9a]",
+  "In Transit": "bg-[#e8eef8] text-[#1a3a7a]",
   Scheduled:    "bg-[#fef3e2] text-[#b45309]",
-  Arrived:      "bg-[#e8f5f0] text-[#1a7a50]",
+  Arrived:      "bg-[#e8f0fd] text-[#2a5abf]",
 };
 
 const imports: {
@@ -34,7 +34,7 @@ export default function MediaSection() {
               Media
             </p>
             <h2
-              className="text-[#1a4a3a] font-playfair font-normal"
+              className="text-[#1a3a7a] font-playfair font-normal"
               style={{ fontSize: "clamp(26px, 4vw, 40px)" }}
             >
               See Our Hatchery in Action
@@ -45,7 +45,7 @@ export default function MediaSection() {
             {videos.map(({ label }) => (
               <div
                 key={label}
-                className="group relative bg-[#0f4a38] rounded-2xl overflow-hidden aspect-video flex flex-col items-center justify-center cursor-pointer hover:bg-[#1a5a44] transition-colors duration-300"
+                className="group relative bg-[#0f2a5a] rounded-2xl overflow-hidden aspect-video flex flex-col items-center justify-center cursor-pointer hover:bg-[#1a3a7a] transition-colors duration-300"
               >
                 {/* Dot pattern */}
                 <div
@@ -59,13 +59,7 @@ export default function MediaSection() {
 
                 {/* Play button */}
                 <div className="relative z-10 w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30 group-hover:scale-110 group-hover:bg-white/30 transition-all duration-300 mb-4">
-                  <svg
-                    width="20"
-                    height="20"
-                    fill="white"
-                    viewBox="0 0 24 24"
-                    className="ml-1"
-                  >
+                  <svg width="20" height="20" fill="white" viewBox="0 0 24 24" className="ml-1">
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </div>
@@ -80,7 +74,7 @@ export default function MediaSection() {
       </section>
 
       {/* ── Broodstock Imports Table ── */}
-      <section className="bg-[#f7f6f1] py-20 px-6">
+      <section className="bg-[#f4f6fb] py-20 px-6">
         <div className="max-w-[1200px] mx-auto">
 
           {/* Header row */}
@@ -90,7 +84,7 @@ export default function MediaSection() {
                 Live Update
               </p>
               <h2
-                className="text-[#1a4a3a] font-playfair font-normal"
+                className="text-[#1a3a7a] font-playfair font-normal"
                 style={{ fontSize: "clamp(26px, 4vw, 38px)" }}
               >
                 Broodstock Imports
@@ -98,8 +92,8 @@ export default function MediaSection() {
             </div>
 
             {/* Live badge */}
-            <span className="flex items-center gap-2 bg-white border border-gray-200 text-[#1a7a50] text-xs font-bold tracking-[1.5px] uppercase font-lato px-4 py-2 rounded-full shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-[#2ecc80] animate-pulse" />
+            <span className="flex items-center gap-2 bg-white border border-gray-200 text-[#1a3a7a] text-xs font-bold tracking-[1.5px] uppercase font-lato px-4 py-2 rounded-full shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#2e7acc] animate-pulse" />
               Live Status
             </span>
           </div>
@@ -108,7 +102,7 @@ export default function MediaSection() {
           <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
             <table className="w-full text-sm font-lato">
               <thead>
-                <tr className="bg-[#0f4a38] text-white">
+                <tr className="bg-[#0f2a5a] text-white">
                   {["Origin", "Species", "Quantity", "Arrival", "Status"].map((h) => (
                     <th
                       key={h}
@@ -127,9 +121,7 @@ export default function MediaSection() {
                     <td className="px-6 py-4 text-gray-600">{quantity}</td>
                     <td className="px-6 py-4 text-gray-600">{arrival}</td>
                     <td className="px-6 py-4">
-                      <span
-                        className={`inline-block text-xs font-bold px-3 py-1 rounded-full ${statusStyles[status]}`}
-                      >
+                      <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full ${statusStyles[status]}`}>
                         {status}
                       </span>
                     </td>
