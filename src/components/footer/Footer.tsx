@@ -10,7 +10,7 @@ export default function Footer() {
 
         {/* Contact */}
         <p className="text-white/70 text-sm font-lato">
-          Kumarapalayam, Tamil Nadu · info@ecohatch.in · +91 98765 43210
+         East Coast Rd, Chettinagar, Tamil Nadu 604303
         </p>
 
         {/* Copyright */}
