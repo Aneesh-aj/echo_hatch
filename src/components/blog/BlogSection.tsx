@@ -8,7 +8,7 @@ const BlogSection = () => {
     <>
       <BlogHero />
       <BlogContent/>
-      <BlogCTA/>
+      {/* <BlogCTA/> */}
     </>
   );
 };
