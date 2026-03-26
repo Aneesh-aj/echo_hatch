@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -18,16 +19,11 @@ export default function NavBar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <div className="mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+      <div className="mx-auto px-6 py-8 md:px-10 h-20 flex items-center justify-between">
 
         {/* ── Brand ── */}
         <Link href="/home" className="flex flex-col leading-tight">
-          <span className="text-[22px] font-bold text-[#1a4a3a] tracking-tight font-playfair">
-            Eco<span className="text-[#c8a84b]">Hatch</span>
-          </span>
-          <span className="text-[9px] font-bold tracking-[2px] text-[#c8a84b] uppercase mt-0.5 font-lato">
-            Shrimp Seed Producer
-          </span>
+           <Image src="/logo/ecohatch.png" alt="EcoHatch Logo" width={70} height={70}/>
         </Link>
 
         {/* ── Desktop Links ── */}
@@ -85,7 +81,7 @@ export default function NavBar() {
                 key={label}
                 href={href}
                 onClick={() => setMenuOpen(false)}
-                className={`py-3 text-[15px] font-lato tracking-[0.8px] border-b border-gray-100 transition-colors duration-200 ${
+                className={`py-3 text-[18px] font-lato tracking-[0.8px] border-b border-gray-100 transition-colors duration-200 ${
                   isActive
                     ? "text-[#1a3a7a] font-bold"
                     : "text-[#2d2d2d] hover:text-[#1a3a7a]"

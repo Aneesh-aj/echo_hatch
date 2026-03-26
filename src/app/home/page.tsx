@@ -4,13 +4,13 @@ import HomeSection from "@/components/home/HomeSection"
 
 
 
-const HomePage = () =>{
+const HomePage = () => {
 
     return (
-         <LayoutSection>
-      <HomeSection />
-      {/* Add more sections here */}
-    </LayoutSection>
+        <LayoutSection>
+            <HomeSection />
+            {/* Add more sections here */}
+        </LayoutSection>
     )
 }
 
