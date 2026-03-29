@@ -23,7 +23,7 @@ export default function NavBar() {
 
         {/* ── Brand ── */}
         <Link href="/home" className="flex flex-col leading-tight">
-           <Image src="/logo/ecohatch.png" alt="EcoHatch Logo" width={70} height={70}/>
+           <Image src="/logo/aquatech.png" alt="EcoHatch Logo" width={180} height={180}/>
         </Link>
 
         {/* ── Desktop Links ── */}

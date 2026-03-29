@@ -35,7 +35,7 @@ export default function AboutHero() {
           className="text-white font-bold font-playfair leading-tight m-0"
           style={{ fontSize: "clamp(32px, 5vw, 52px)" }}
         >
-          About EcoHatch
+          About Allwin Aquatech
         </h1>
         <p
           className="text-white/80 font-lato font-light leading-relaxed max-w-[480px] m-0"

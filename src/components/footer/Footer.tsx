@@ -5,7 +5,7 @@ export default function Footer() {
 
         {/* Brand */}
         <p className="text-white text-sm font-semibold tracking-wide font-lato">
-          EcoHatch – Shrimp Seed Producer
+          Allwin Aquatec – Shrimp Seed Producer
         </p>
 
         {/* Contact */}

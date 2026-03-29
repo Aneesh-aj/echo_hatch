@@ -23,7 +23,7 @@ const services = [
     id: 3,
     emoji: "🏪",
     bgColor: "bg-[#e8eef8]",
-    title: "Ecotech Associate Shop",
+    title: "Allwin Aquatec Associate Shop",
     description:
       "Premium aquaculture inputs including specialized feed, probiotics, water treatment chemicals, and disease prevention products.",
     tag: "Retail",

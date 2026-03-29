@@ -1,7 +1,7 @@
 const milestones = [
   {
     year: "2009",
-    title: "Founded EcoHatch Hatchery",
+    title: "Founded Allwin Aquatech Hatchery",
     description:
       "Started with 2 hatchery tanks and a small broodstock program in Kumarapalayam.",
   },
@@ -19,7 +19,7 @@ const milestones = [
   },
   {
     year: "2023",
-    title: "Opened Ecotech Associate Shop",
+    title: "Opened Allwin Aquatech Associate Shop",
     description:
       "Launched retail division supplying premium feed, probiotics and aquaculture inputs.",
   },
