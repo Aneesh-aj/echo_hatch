@@ -37,7 +37,7 @@ const services = [
         <rect x="24" y="21" width="4" height="4" rx="0.5" stroke="#1a3a7a" strokeWidth="1.5"/>
       </svg>
     ),
-    title: "Ecotech Shop",
+    title: "Allwin Ecotech Shop",
     description: "Premium feed, probiotics, and aquaculture inputs for optimal farm performance.",
   },
 ];
@@ -58,7 +58,7 @@ export default function ServicesSection() {
           >
             Complete Shrimp Aquaculture Services
           </h2>
-          <p className="text-gray-500 font-lato text-[15px] leading-relaxed max-w-[620px]">
+          <p className="text-gray-500 font-lato text-[18px] leading-relaxed max-w-[620px]">
             From hatchery production to farm consultancy, we provide end-to-end
             solutions for shrimp farming success. Our certified broodstock imports
             ensure the highest genetic quality.
@@ -78,12 +78,12 @@ export default function ServicesSection() {
               </div>
 
               {/* Title */}
-              <h3 className="text-[#1a3a7a] text-base font-bold font-lato">
+              <h3 className="text-[#1a3a7a] text-[19px] font-bold font-lato">
                 {title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-500 text-sm font-lato leading-relaxed">
+              <p className="text-gray-500 text-[16px] font-lato leading-relaxed">
                 {description}
               </p>
             </div>

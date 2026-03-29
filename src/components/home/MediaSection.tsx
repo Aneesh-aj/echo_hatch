@@ -80,7 +80,7 @@ export default function MediaSection() {
           {/* Header row */}
           <div className="flex items-start justify-between mb-8 flex-wrap gap-4">
             <div>
-              <p className="text-[#c8a84b] text-xs font-bold tracking-[3px] uppercase font-lato mb-3">
+              <p className="text-[#c8a84b] text-sm font-bold tracking-[3px] uppercase font-lato mb-3">
                 Live Update
               </p>
               <h2
@@ -100,13 +100,13 @@ export default function MediaSection() {
 
           {/* Table */}
           <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
-            <table className="w-full text-sm font-lato">
+            <table className="w-full text-md font-lato">
               <thead>
                 <tr className="bg-[#0f2a5a] text-white">
                   {["Origin", "Species", "Quantity", "Arrival", "Status"].map((h) => (
                     <th
                       key={h}
-                      className="text-left text-[11px] font-bold tracking-[2px] uppercase px-6 py-4"
+                      className="text-left text-[13px] font-bold tracking-[2px] uppercase px-6 py-4"
                     >
                       {h}
                     </th>

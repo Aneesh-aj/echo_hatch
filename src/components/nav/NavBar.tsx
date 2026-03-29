@@ -23,7 +23,7 @@ export default function NavBar() {
 
         {/* ── Brand ── */}
         <Link href="/home" className="flex flex-col leading-tight">
-           <Image src="/logo/aquatech.png" alt="EcoHatch Logo" width={180} height={180}/>
+           <Image src="/logo/aquatech.png" alt="EcoHatch Logo" width={200} height={200}/>
         </Link>
 
         {/* ── Desktop Links ── */}
@@ -34,7 +34,7 @@ export default function NavBar() {
               <li key={label}>
                 <Link
                   href={href}
-                  className={`text-sm font-lato tracking-[0.8px] transition-colors duration-200 pb-0.5 ${
+                  className={`text-md font-lato tracking-[0.8px] transition-colors duration-200 pb-0.5 ${
                     isActive
                       ? "text-[#1a3a7a] font-bold border-b-2 border-[#1a3a7a]"
                       : "text-[#2d2d2d] font-normal hover:text-[#1a3a7a]"

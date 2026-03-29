@@ -49,7 +49,7 @@ export default function HeroSection() {
         {/* Subtitle */}
         <p
           className="text-white/80 leading-relaxed max-w-[480px] m-0 font-lato font-light"
-          style={{ fontSize: "clamp(14px, 1.8vw, 17px)" }}
+          style={{ fontSize: "clamp(14px, 1.8vw, 18px)" }}
         >
           We produce high-quality shrimp seeds with optimal survival rates,
           backed by decades of expertise in aquaculture and hatchery operations.
@@ -59,13 +59,13 @@ export default function HeroSection() {
         <div className="flex flex-wrap justify-center gap-4 mt-2">
           <Link
             href="/contact"
-            className="px-8 py-3.5 text-sm font-bold font-lato bg-white text-[#1a3a7a] rounded-md border-2 border-white hover:bg-[#f0f4ff] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+            className="px-8 py-3.5 text-sm md:text-sm font-bold font-lato bg-white text-[#1a3a7a] rounded-md border-2 border-white hover:bg-[#f0f4ff] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
           >
             Get a Quote
           </Link>
           <Link
             href="/services"
-            className="px-8 py-3.5 text-sm font-bold font-lato bg-transparent text-white rounded-md border-2 border-white/70 hover:bg-white/10 hover:border-white transition-all duration-200 hover:-translate-y-0.5"
+            className="px-8 py-3.5 text-sm md:text-sm font-bold font-lato bg-transparent text-white rounded-md border-2 border-white/70 hover:bg-white/10 hover:border-white transition-all duration-200 hover:-translate-y-0.5"
           >
             Our Services
           </Link>
